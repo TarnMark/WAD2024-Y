@@ -3,19 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" href="./res/css/style.css">
+    <link rel="stylesheet" href="./res/css/index.css">
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <nav>
-            <menu>
+            <menu class="main-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Add Post</a></li>
             </menu>
         </nav>
-        <img class="profile-picture" src="" alt="profile picture">
+        <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
     </header>
 
     <div class="ix-mainbars">
@@ -24,14 +26,27 @@
 
             <article class="post">
                 <header class="postheader">
-                    <img class="profile-picture" src="" alt="profile picture">
+                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
                     <span class="post-date">Sep. 25, 2024</span>
                 </header>
                 <div class="post-body">
                     <p>This is a post</p>
                 </div>
                 <footer class="post-footer">
-                    <a href="#"><img src="" alt="like"></a>
+                    <a href="#"><button class="like"></button></a>
+                </footer>
+            </article>
+
+            <article class="post">
+                <header class="postheader">
+                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
+                    <span class="post-date">Sep. 95, 2024</span>
+                </header>
+                <div class="post-body">
+                    <p>This is a post number 2</p>
+                </div>
+                <footer class="post-footer">
+                    <a href="#"><button class="like"></button></a>
                 </footer>
             </article>
 
@@ -40,7 +55,7 @@
     </div>
 
     <footer class="main-footer">
-
+        <p>Footer</p>
     </footer>
 </body>
 

@@ -1,0 +1,76 @@
+.ix-mainbars {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ix-mainbars > aside {
+    flex-grow: 2;
+    background-color: gainsboro;
+    margin: 4px;
+    margin-top: 0px;
+}
+
+.ix-mainbars > aside:nth-child(1) {
+    order: 1;
+}
+
+.ix-mainbars > main:nth-child(2) {
+    order: 2;
+}
+
+.ix-mainbars > aside:nth-child(3) {
+    order: 3;
+}
+
+.ix-mainbars > main {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+article.post {
+    margin: 4px;
+    padding: 8px;
+    background-color: ghostwhite;
+}
+
+header.postheader {
+    min-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-body {
+    margin: 4px;
+    min-height: 36px;
+}
+
+button.like {
+    background-image: url("../images/thumbs-up-black-icon.svg");
+    min-width: 24px;
+    height: 21px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .ix-mainbars {
+        flex-direction: column;
+    }
+
+    .ix-mainbars > aside:nth-child(1) {
+        order: 1;
+    }
+    
+    .ix-mainbars > main:nth-child(2) {
+        order: 3;
+    }
+    
+    .ix-mainbars > aside:nth-child(3) {
+        order: 1;
+    }
+}
