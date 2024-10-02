@@ -1,4 +1,3 @@
-/* Center the form using Flexbox */
 .container {
     display: flex;
     justify-content: center;
@@ -34,9 +33,9 @@
 }
 
 .input-group input {
-    width: 50%; /* Adjust the width if you want them to be smaller/larger */
-    padding: 15px; /* Change padding to adjust the height */
-    font-size: 16px; /* Adjust font size */
+    width: 50%; 
+    padding: 15px; 
+    font-size: 16px; 
     border: 1px solid #ccc;
     border-radius: 5px;
 }
