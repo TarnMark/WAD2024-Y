@@ -1,35 +1,37 @@
 .ix-mainbars {
-    height: 100vh;
+    /* height: 100vh; */
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.ix-mainbars > aside {
+.ix-mainbars>aside {
     flex-grow: 2;
     background-color: gainsboro;
     margin: 4px;
     margin-top: 0px;
 }
 
-.ix-mainbars > aside:nth-child(1) {
+.ix-mainbars>aside:nth-child(1) {
     order: 1;
 }
 
-.ix-mainbars > main:nth-child(2) {
+.ix-mainbars>main:nth-child(2) {
     order: 2;
 }
 
-.ix-mainbars > aside:nth-child(3) {
+.ix-mainbars>aside:nth-child(3) {
     order: 3;
 }
 
-.ix-mainbars > main {
+.ix-mainbars>main {
     flex-grow: 4;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    
+    max-height: 85vh; /* hard coded */
+    overflow: scroll;
 }
 
 article.post {
@@ -43,6 +45,7 @@ header.postheader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .post-body {
@@ -52,8 +55,9 @@ header.postheader {
 
 button.like {
     background-image: url("../images/thumbs-up-black-icon.svg");
+    background-repeat: no-repeat;
     min-width: 24px;
-    height: 21px;
+    height: 24px;
     border: none;
 }
 
@@ -62,15 +66,15 @@ button.like {
         flex-direction: column;
     }
 
-    .ix-mainbars > aside:nth-child(1) {
+    .ix-mainbars>aside:nth-child(1) {
         order: 1;
     }
-    
-    .ix-mainbars > main:nth-child(2) {
+
+    .ix-mainbars>main:nth-child(2) {
         order: 3;
     }
-    
-    .ix-mainbars > aside:nth-child(3) {
+
+    .ix-mainbars>aside:nth-child(3) {
         order: 1;
     }
 }

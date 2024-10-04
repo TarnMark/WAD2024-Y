@@ -9,6 +9,9 @@ html {
 
 body {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header.main-header {
@@ -26,13 +29,13 @@ menu.main-menu {
     list-style-type: none;
 }
 
-menu.main-menu > li {
+menu.main-menu>li {
     background-color: grey;
     margin: 2px;
     padding: 6px;
 }
 
-menu.main-menu > li:hover {
+menu.main-menu>li:has(a:hover) {
     background-color: cornflowerblue;
 }
 
