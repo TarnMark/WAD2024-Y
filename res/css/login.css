@@ -1,3 +1,4 @@
+/* Container to center content vertically and horizontally */
 .container {
     display: flex; 
     justify-content: center; 
@@ -6,6 +7,7 @@
     background-color: white; 
 }
 
+/* Styling for the login box */
 .login-box {
     background-color: #f2f2f2;
     padding: 20px;
@@ -18,7 +20,7 @@
     justify-content: center;
 }
 
-/* Lingid ja tekst */
+/* Styling for links inside the login box */
 .login-box a {
     color: #007BFF;
     text-decoration: underline;
@@ -26,16 +28,17 @@
     margin-top: 10px;
 }
 
-/* Hover efekt nupule */
+/* Hover effect for the login button */
 .login-btn:hover {
     background-color: #0056b3;
 }
 
-/* Vormi elemendid */
+/* Styling for input groups */
 .input-group {
     margin-bottom: 15px;
 }
 
+/* Input field styles */
 .input-group input {
     width: 50%; 
     padding: 15px; 
@@ -44,7 +47,7 @@
     border-radius: 5px;
 }
 
-/* Login nupp */
+/* Styling for the login button */
 .login-btn {
     width: 100%;
     padding: 10px;
@@ -55,7 +58,7 @@
     cursor: pointer;
 }
 
-/* Unustatud parool */
+/* Styling for the "Forgot Password" link */
 .forgot-password {
     display: block;
     margin-top: 15px;
@@ -63,12 +66,12 @@
     text-decoration: none;
 }
 
-/* Lisa vahed sibling-elementide jaoks */
+/* Add margin below h2 if followed by a link */
 h2 + a {
     margin-bottom: 15px;
 }
 
-/* Hover-efekt Home ja Add Post linkidele */
+/* Hover effect for links in the main menu */
 .main-menu li a:hover {
     background-color: #007BFF;
     color: white;
@@ -76,7 +79,7 @@ h2 + a {
     border-radius: 5px;
 }
 
-/* Mobiilivaade */
+/* Responsive styles for mobile view */
 @media (max-width: 600px) {
     .container {
         padding: 10px;
