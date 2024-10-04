@@ -1,2 +1,34 @@
 <!DOCTYPE html>
-<html></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/css/style.css">
+    <link rel="stylesheet" href="./res/css/addpost.css">
+    <title>Add Post</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <menu class="main-menu">
+                <li><a href="./index.html">Home</a></li>
+            </menu>
+        </nav>
+        <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
+    </header>
+
+    <div class="container" id="addPostBox">
+        <span class="post-text-input">
+            <label for="post-text">Post body</label>
+            <textarea name="post-text" id="post-text" placeholder="Dear diary..."></textarea>
+        </span> <br>
+
+        <span class="post-input">
+            <label for="post-file">Select file</label>
+            <input type="file" name="post-file" id="post-file">
+        </span> <br> <br>
+        
+        <button type="submit" class="submitButton"  id="createPostButton"> <a href="./index.html">Create post</a></button>
+    </div>
+</body>
+</html>

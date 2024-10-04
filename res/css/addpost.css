@@ -1,0 +1,23 @@
+#addPostBox label{
+    margin: 5px;
+    min-height: 2em;
+    max-width: 1px;
+    text-wrap:wrap;
+}
+
+#addPostBox > * {
+    margin: 10px;
+}
+
+#post-file {
+    max-width: 180px;
+}
+
+.post-text-input textarea {
+    height: 10em;
+    padding: 5px;
+}
+
+
+
+

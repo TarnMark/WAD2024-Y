@@ -39,7 +39,7 @@ menu.main-menu>li:has(a:hover) {
     background-color: cornflowerblue;
 }
 
-menu.main-menu a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -61,4 +61,27 @@ footer.main-footer {
     display: flex;
     justify-content: center;
     background-color: gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: gainsboro;
+    max-width: 50%;
+    min-width: 200px;
+    margin: 5% auto;
+    padding: 10px;
+}
+
+.submitButton {
+    background-color: rgb(75, 75, 207);
+    color: whitesmoke;
+    padding: 5px 15px;   
+}
+
+label + textarea {
+    vertical-align: top;
+    resize: none;
 }
