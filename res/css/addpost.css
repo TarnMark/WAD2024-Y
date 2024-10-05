@@ -16,8 +16,9 @@
 .post-text-input textarea {
     height: 10em;
     padding: 5px;
+    border-radius: 5px;
 }
 
-
-
-
+.submitButton {
+    width: 90%;
+}

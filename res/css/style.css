@@ -68,7 +68,8 @@ footer.main-footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: gainsboro;
+    background-color: #dcdcdc;
+    border-radius: 10px;
     max-width: 50%;
     min-width: 200px;
     margin: 5% auto;
@@ -76,9 +77,18 @@ footer.main-footer {
 }
 
 .submitButton {
-    background-color: rgb(75, 75, 207);
-    color: whitesmoke;
-    padding: 5px 15px;   
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
 }
 
 label + textarea {

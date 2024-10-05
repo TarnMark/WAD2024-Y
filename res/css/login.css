@@ -2,14 +2,13 @@
 .container {
     display: flex; 
     justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
+    align-items: center;
     background-color: white; 
 }
 
 /* Styling for the login box */
 .login-box {
-    background-color: #f2f2f2;
+    background-color: #dcdcdc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -71,13 +70,6 @@ h2 + a {
     margin-bottom: 15px;
 }
 
-/* Hover effect for links in the main menu */
-.main-menu li a:hover {
-    background-color: #007BFF;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-}
 
 /* Responsive styles for mobile view */
 @media (max-width: 600px) {
@@ -87,6 +79,6 @@ h2 + a {
     }
 
     .login-box {
-        width: 100%;
+        width: 80%;
     }
 }
