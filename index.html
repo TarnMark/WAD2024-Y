@@ -17,7 +17,9 @@
                 <li><a href="./addPost.html">Add Post</a></li>
             </menu>
         </nav>
-        <a href="./login.html"><img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture"></a>
+        <img id="profile-picture" class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
+
+
     </header>
 
     <div class="ix-mainbars">
@@ -26,74 +28,6 @@
             <!-- Posts saved in JSON format are accessible through this link: https://www.npoint.io/docs/5999fe351f23d84c7491 -->
             <!-- When using the endpoint to fetch data, use the link https://api.npoint.io/5999fe351f23d84c7491 to access raw JSON -->
 
-            <!-- TODO: replace hard-coded posts by fetching from JSON file -->
-            <!-- <article class="post">
-                <header class="postheader">
-                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
-                    <span class="post-date">Sep. 25, 2024</span>
-                </header>
-                <div class="post-body">
-                    <img src="./res/images/tartu2024.png" alt="user photo">
-                    <p>I love Tartu 20204</p>
-                </div>
-                <footer class="post-footer">
-                    <a href="#"><button class="like"></button></a>
-                </footer>
-            </article>
-
-            <article class="post">
-                <header class="postheader">
-                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
-                    <span class="post-date">Sep. 25, 2024</span>
-                </header>
-                <div class="post-body">
-                    <p>I'm learning javascript</p>
-                </div>
-                <footer class="post-footer">
-                    <a href="#"><button class="like"></button></a>
-                </footer>
-            </article>
-
-            <article class="post">
-                <header class="postheader">
-                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
-                    <span class="post-date">Sep. 26, 2024</span>
-                </header>
-                <div class="post-body">
-                    <p>I'm learning HTML</p>
-                </div>
-                <footer class="post-footer">
-                    <a href="#"><button class="like"></button></a>
-                </footer>
-            </article>
-
-            <article class="post">
-                <header class="postheader">
-                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
-                    <span class="post-date">Sep. 27, 2024</span>
-                </header>
-                <div class="post-body">
-                    <p>I'm learning.</p>
-                </div>
-                <footer class="post-footer">
-                    <a href="#"><button class="like"></button></a>
-                </footer>
-            </article>
-
-            <article class="post">
-                <header class="postheader">
-                    <img class="profile-picture" src="./res/images/male-icon.png" alt="profile picture">
-                    <span class="post-date">Sep. 25, 2024</span>
-                </header>
-                <div class="post-body">
-                    <img src="./res/images/thumbs-up-black-icon.svg" alt="user photo">
-                    <p>Huge thumbs up SVG</p>
-                </div>
-                <footer class="post-footer">
-                    <a href="#"><button class="like"></button></a>
-                </footer>
-            </article> -->
-
         </main>
         <aside></aside>
     </div>
@@ -101,6 +35,15 @@
     <footer class="main-footer">
         <p>Footer</p>
     </footer>
+
+    <div id="login-dropdown" class="dropdown-parent hidden">
+        <aside class="dropdown-menu">
+            <p class="username">Mari Maasikas</p>
+            <p class="email">mari.maasikas@ut.ee</p>
+            <br>
+            <p class="logout"><a href="login.html">logout</a></p>
+        </aside>
+    </div>
     <script src="javascript.js"></script>
 </body>
 

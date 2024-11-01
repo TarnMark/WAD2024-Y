@@ -52,6 +52,33 @@ menu.main-menu a:hover {
 .profile-picture {
     background-color: cadetblue;
     max-width: 32px;
+    cursor: pointer;
+}
+
+.dropdown-parent {
+    position: absolute;
+    right: 0;
+    top:48px;
+}
+
+.dropdown-menu {
+    background-color: ghostwhite;
+    border-radius: 6px;
+    bottom: auto;
+    box-shadow: 0 3px 10px 0 #0003;
+    display: block;
+    left: 0;
+    left: auto;
+    margin: 0;
+    padding: 8px;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 200px
+}
+
+.dropdown-menu>.logout>a{
+    color: #0056b3;
 }
 
 footer.main-footer {
@@ -94,4 +121,8 @@ footer.main-footer {
 label + textarea {
     vertical-align: top;
     resize: none;
+}
+
+.hidden {
+    display: none;
 }

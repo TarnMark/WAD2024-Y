@@ -77,3 +77,14 @@ function renderPosts(posts, mainElement) {
         mainElement.appendChild(article);
     });
 }
+
+document.addEventListener("click", (ev) => {
+    let dropdown = document.getElementById("login-dropdown")
+    let image = document.getElementById("profile-picture")
+    if (ev.target == image) {
+        dropdown.classList.toggle("hidden");
+    } else if (ev.target == dropdown || dropdown.contains(ev.target)) { } else {
+        dropdown.classList.add("hidden");
+    }
+})
+
